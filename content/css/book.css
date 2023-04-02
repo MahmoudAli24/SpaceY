@@ -214,6 +214,80 @@ a {
   }
 }
 /* End Price */
+/* Start Overlay */
+.credit-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.card-header {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-number label,
+.card-info-item label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-number input[type="text"] {
+  background-image: url("https://www.freeiconspng.com/uploads/credit-card-icon-2.png");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: right 10px center;
+  padding-right: 50px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-info-item {
+  flex-basis: 30%;
+}
+
+.card-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+/* End Overlay */
 
 .container {
   width: 100%;
