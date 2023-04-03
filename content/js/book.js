@@ -32,3 +32,30 @@ function validateCVV(cvv) {
   var regex = /^[0-9]{3}$/;
   return regex.test(cvv);
 }
+// -------------------
+// Start QA
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    // close all other open accordions
+    for (let j = 0; j < acc.length; j++) {
+      if (j != i && acc[j].classList.contains("active")) {
+        acc[j].classList.remove("active");
+        let panel = acc[j].nextElementSibling;
+        panel.style.maxHeight = null;
+      }
+    }
+    // toggle the clicked accordion
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
+// End QA
