@@ -44,6 +44,7 @@
 .main-nav__link {
   font-weight: 500;
   cursor: pointer;
+  margin: 0;
 }
 .main-nav__link:hover {
   color: #8e4791cc;
