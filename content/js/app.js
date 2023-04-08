@@ -1,10 +1,3 @@
-let menu = document.querySelector(".menu-icon");
-let NavBarList = document.querySelector(".main-nav__list");
-
-menu.addEventListener("click", () => {
-  NavBarList.classList.toggle("show");
-});
-
 function countUp(targetElement, start, end, duration) {
   let current = start;
   const range = end - start;
@@ -27,3 +20,6 @@ countUp(".client", 0, client, 2000);
 countUp(".project", 0, project, 3000);
 countUp(".employe", 0, employe, 1000);
 countUp(".years", 0, years, 1500);
+
+// /////////////////////////////test///////////////////////////
+// /////////////////////////////test///////////////////////////
