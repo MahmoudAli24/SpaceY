@@ -6,6 +6,11 @@
   height: 80px;
   position: relative;
 }
+.main-nav__logo img {
+  width: 160px;
+  height: auto;
+  display: block;
+}
 .main-nav__list {
   display: flex;
   align-items: center;

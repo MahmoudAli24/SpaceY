@@ -5,7 +5,6 @@ fetch("../../services/shop.json")
   .then((response) => response.json())
   .then((data) => {
     const productDetails = document.querySelector(".product-details__content");
-    console.log(data[productId].title);
     const productTemplate = `
     <div class="product-details__content__img">
       <img src="${data[productId]["src-front"]}" alt="..." />
@@ -26,7 +25,7 @@ fetch("../../services/shop.json")
       <form>
         <div class="size">
           <span>Size:</span>
-          <select class="size-select">
+          <select id="size" class="size-select">
             <option value="X">X</option>
             <option value="L">L</option>
             <option value="XL">XL</option>
@@ -52,23 +51,47 @@ fetch("../../services/shop.json")
           </div>
         </div>
         <div class="submit">
-          <button type="submit">ADD TO CART</button>
+          <button type="submit" value="submit">ADD TO CART</button>
         </div>
       </form>
     </div>
     `;
     productDetails.innerHTML = productTemplate;
-
-    // const productTemplate = `
-    //   <img src="${data[productId]["src-front"]}" alt="..." />
-    //   <img src="${data[productId]["src-back"]}" alt="..." />
-    //   <span>${data[productId].price}</span>
-    // `;
+    // Form Data
+    const myForm = document.querySelector("form");
+    myForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const quantity = document.querySelector("#quantity").value;
+      const size = document.querySelector("#size").value;
+      const price = data[productId].price;
+      const title = data[productId].title;
+      const imgSrc = data[productId]["src-front"];
+      let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+      const existingCartItemIndex = cartItems.findIndex(
+        (item) => item.title === title && item.size === size
+      );
+      if (existingCartItemIndex > -1) {
+        // if item already exists in cart, update the quantity
+        cartItems[existingCartItemIndex].quantity = parseInt(quantity);
+      } else {
+        // if item does not exist in cart, add it as a new item
+        const cartItem = {
+          size: size,
+          price: price,
+          quantity: quantity,
+          title: title,
+          imgSrc: imgSrc,
+        };
+        cartItems.push(cartItem);
+      }
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      // Navigate to the new page with the form data in the URL
+      window.location.href = "cart.html";
+    });
   })
   .catch((error) => console.error(error));
 
 // quantity-input
-
 window.addEventListener("load", function () {
   let plus = document.querySelector(".plus");
   let minus = document.querySelector(".minus");

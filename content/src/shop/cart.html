@@ -11,8 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/navbar/navbar.css" />
-    <link rel="stylesheet" href="../../css/shop.css" />
-    <title>Shop Men</title>
+    <link rel="stylesheet" href="../../css/cart.css" />
+    <title>Cart</title>
   </head>
   <body>
     <nav class="main-nav">
@@ -48,16 +48,35 @@
       </div>
     </nav>
     <main>
-      <header><h1>MEN'S SHIRTS</h1></header>
-      <section class="product">
+      <section>
+        <header><h1>CART</h1></header>
+      </section>
+      <section class="cart">
         <div class="container">
-          <div class="products-content">
-            <div class="cards"></div>
+          <div class="cart-content">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="2"></td>
+                  <td class="cart-label">Total:</td>
+                  <td class="cart-total"></td>
+                </tr>
+              </tfoot>
+            </table>
           </div>
         </div>
       </section>
     </main>
-    <script src="../../js/shop-men.js"></script>
     <script src="../../js/navBar.js"></script>
+    <script src="../../js/cart.js"></script>
   </body>
 </html>

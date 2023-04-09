@@ -10,49 +10,49 @@
     "id":1,
     "src-front":"../../image/shop-men/2-F.webp",
     "src-back":"../../image/shop-men/2-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S OCCUPY MARS T-SHIRT",
+    "price":40
   },  
   {
     "id":2,
     "src-front":"../../image/shop-men/3-F.webp",
     "src-back":"../../image/shop-men/3-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S FALCON 1 T-SHIRT",
+    "price":90
   },  
   {
     "id":3,
     "src-front":"../../image/shop-men/4-F.webp",
     "src-back":"../../image/shop-men/4-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S CREW DRAGON SCHEMATIC T-SHIRT",
+    "price":80
   },  
   {
     "id":4,
     "src-front":"../../image/shop-men/5-F.webp",
     "src-back":"../../image/shop-men/5-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S STARMAN T-SHIRT",
+    "price":60
   },  
   {
     "id":5,
     "src-front":"../../image/shop-men/6-F.webp",
     "src-back":"../../image/shop-men/6-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S DRAGON T-SHIRT",
+    "price":10
   },  
   {
     "id":6,
     "src-front":"../../image/shop-men/7-F.webp",
     "src-back":"../../image/shop-men/7-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S FALCON HEAVY T-SHIRT",
+    "price":40
   },  
   {
     "id":7,
     "src-front":"../../image/shop-men/8-F.webp",
     "src-back":"../../image/shop-men/8-B.webp",
-    "title":"MEN'S SPACEY T-SHIRT",
-    "price":30
+    "title":"MEN'S F9 T-SHIRT",
+    "price":100
   }
 ]
