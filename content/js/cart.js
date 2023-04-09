@@ -20,7 +20,7 @@ cartItems.forEach((cartItem, index) => {
         </div>
         <div class="product-info">
           <h3 class="product-name">${cartItem.title}</h3>
-          <p class="${cartItem.size}"></p>
+          <p class="product-size">${cartItem.size}</p>
         </div>
       </td>
       <td class="product-price">$${cartItem.price}</td>
@@ -42,11 +42,15 @@ cartItems.forEach((cartItem, index) => {
           <button onclick="removeItemFromCart(${index})">Remove</button>
         </div>
       </td>
-      <td class="product-subtotal">${cartItem.quantity * cartItem.price}</td>
+      <td class="product-subtotal"></td>
     </tr>
   `;
   cartTable.innerHTML += cartRow;
   let cartTotal = document.querySelector(".cart-total");
+
+  //
+
+  //
   let productSubtotal = document.querySelectorAll(".product-subtotal");
   let total = 0;
   productSubtotal.forEach((el) => {
@@ -54,22 +58,38 @@ cartItems.forEach((cartItem, index) => {
   });
   cartTotal.textContent = `$ ${total}`;
 });
-window.addEventListener("onload", () => {
-  let quantityInput = document.querySelector("#quantity");
-  console.log(quantityInput);
-  window.addEventListener("load", function () {
-    let plus = document.querySelector(".plus");
-    let minus = document.querySelector(".minus");
+window.addEventListener("load", () => {
+  let plusButtons = document.querySelectorAll(".plus");
+  let minusButtons = document.querySelectorAll(".minus");
 
+  plusButtons.forEach((plus) => {
     plus.addEventListener("click", () => {
-      if (quantityInput.value < 10) {
-        ++quantityInput.value;
+      let inputField = plus.previousElementSibling;
+      if (inputField.value < 10) {
+        ++inputField.value;
       }
     });
+  });
+
+  minusButtons.forEach((minus) => {
     minus.addEventListener("click", () => {
-      if (quantityInput.value > 1) {
-        --quantityInput.value;
+      let inputField = minus.nextElementSibling;
+      if (inputField.value > 1) {
+        --inputField.value;
       }
+    });
+  });
+
+  let productSubtotal = document.querySelectorAll(".product-subtotal");
+  let quantityInput = document.querySelectorAll("#quantity");
+  let productPrice = document.querySelectorAll(".product-price");
+
+  quantityInput.forEach((input, index) => {
+    input.addEventListener("change", () => {
+      let quantity = input.value;
+      let price = parseFloat(productPrice[index].textContent.replace("$", ""));
+      let subtotal = quantity * price;
+      productSubtotal[index].textContent = "$" + subtotal.toFixed(2);
     });
   });
 });

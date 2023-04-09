@@ -12,7 +12,7 @@ fetch("../../services/shop.json")
         </div>
         <div class="card-text">
           <a href="#">${item.title}</a><br />
-          <span>${item.price}</span>
+          <span>$ ${item.price}</span>
         </div>
       </div>
     `;
