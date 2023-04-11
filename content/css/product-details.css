@@ -121,8 +121,6 @@ input::-webkit-inner-spin-button {
 }
 .product-details__content__text .submit button {
   width: 100%;
-  position: relative;
-  display: inline-block;
   padding: 14px 28px;
   line-height: normal;
   outline: 1px solid black;

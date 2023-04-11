@@ -124,6 +124,7 @@
     display: none;
     background-color: white;
     padding: 15px;
+    z-index: 2;
   }
   .main-nav__item__menu {
     left: -150px;
