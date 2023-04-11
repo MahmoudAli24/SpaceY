@@ -1,8 +1,8 @@
 function countUp(targetElement, start, end, duration) {
-  let current = start;
   const range = end - start;
   const increment = (range / duration) * 10;
   const element = document.querySelector(targetElement);
+  let current = start;
   const timer = setInterval(() => {
     current += increment;
     element.textContent = Math.floor(current);
@@ -12,14 +12,12 @@ function countUp(targetElement, start, end, duration) {
     }
   }, 10);
 }
-let client = document.querySelector(".client").textContent;
-let project = document.querySelector(".project").textContent;
-let employe = document.querySelector(".employe").textContent;
-let years = document.querySelector(".years").textContent;
-countUp(".client", 0, client, 2000);
-countUp(".project", 0, project, 3000);
-countUp(".employe", 0, employe, 1000);
-countUp(".years", 0, years, 1500);
-
-// /////////////////////////////test///////////////////////////
-// /////////////////////////////test///////////////////////////
+function animateCountUp(targetClass, duration) {
+  const targetElement = document.querySelector(`.${targetClass}`);
+  const endValue = Number(targetElement.textContent);
+  countUp(`.${targetClass}`, 0, endValue, duration);
+}
+animateCountUp("client", 2000);
+animateCountUp("project", 3000);
+animateCountUp("employe", 1000);
+animateCountUp("years", 1500);

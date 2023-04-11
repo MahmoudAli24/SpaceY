@@ -1,8 +1,9 @@
+// Fetch data from shop.json and generate cards
 fetch("../../services/shop.json")
   .then((response) => response.json())
   .then((data) => {
     const cards = document.querySelector(".cards");
-    const cardTemplate = (item) => `
+    const generateCardTemplate = (item) => `
       <div class="card" data-id="${item.id}">
         <div class="card-img">
           <a href="#">
@@ -17,7 +18,7 @@ fetch("../../services/shop.json")
       </div>
     `;
     data.forEach((item) => {
-      const card = cardTemplate(item);
+      const card = generateCardTemplate(item);
       cards.insertAdjacentHTML("beforeend", card);
     });
     // Handle product card click

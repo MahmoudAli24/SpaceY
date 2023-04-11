@@ -1,6 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
-console.log(productId);
 fetch("../../services/shop.json")
   .then((response) => response.json())
   .then((data) => {
