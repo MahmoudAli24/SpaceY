@@ -15,11 +15,13 @@ a {
 }
 /* Start Hero */
 .hero {
-  padding: 220px 0;
+  height: calc(100vh - 80px);
   background-image: url(../image/about-us-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
 }
 .hero-content {
   text-align: center;
@@ -115,6 +117,9 @@ a {
   margin-left: auto;
 }
 @media (max-width: 991px) {
+  .founder-one {
+    padding: 20px 0;
+  }
   .founder-content {
     height: auto;
     flex-direction: column;
