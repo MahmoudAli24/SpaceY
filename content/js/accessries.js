@@ -7,8 +7,9 @@ fetch("../../services/shop.json")
       <div class="card" data-id="${item.id}">
         <div class="card-img">
           <a href="#">
-            <img src="${item["src-front"]}" alt="..." />
-            <img src="${item["src-back"]}" alt="..." />
+            <img src="${item["src-front"]}" alt="..." style="position: unset;
+            opacity: 1;
+            visibility: visible;" />
           </a>
         </div>
         <div class="card-text">
@@ -17,7 +18,7 @@ fetch("../../services/shop.json")
         </div>
       </div>
     `;
-    data.men.forEach((item) => {
+    data.accessories.forEach((item) => {
       const card = generateCardTemplate(item);
       cards.insertAdjacentHTML("beforeend", card);
     });
@@ -26,7 +27,7 @@ fetch("../../services/shop.json")
     cardElements.forEach((cardElement) => {
       cardElement.addEventListener("click", () => {
         const productId = cardElement.getAttribute("data-id");
-        window.location.href = `product-details.html?id=${productId}`;
+        window.location.href = `accessries-details.html?id=${productId}`;
       });
     });
   })

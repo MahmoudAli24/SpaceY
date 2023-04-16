@@ -55,7 +55,9 @@ function removeItemFromCart(index) {
 const cartTable = document.querySelector("tbody");
 cartItems.forEach((cartItem, index) => {
   // let subTotal = cartItem.price * quantityInput;
-
+  if (cartItem.size == undefined) {
+    cartItem.size = ``;
+  }
   const cartRow = `
     <tr>
       <td class="product">

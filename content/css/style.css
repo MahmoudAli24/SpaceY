@@ -19,6 +19,7 @@ a {
   background-image: url(../image/banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   object-fit: cover;
 }
 .banner-content {

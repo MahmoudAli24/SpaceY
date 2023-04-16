@@ -3,7 +3,9 @@ const productId = urlParams.get("id");
 fetch("../../services/shop.json")
   .then((response) => response.json())
   .then((data) => {
-    const product = data.men.find((product) => product.id === +productId);
+    const product = data.accessories.find(
+      (product) => product.id === +productId
+    );
     const productDetails = document.querySelector(".product-details__content");
     const productTemplate = `
     <div class="product-details__content__img">
@@ -23,18 +25,6 @@ fetch("../../services/shop.json")
         </ul>
       </div>
       <form>
-        <div class="size">
-          <span>Size:</span>
-          <select id="size" class="size-select">
-            <option value="X">X</option>
-            <option value="L">L</option>
-            <option value="XL">XL</option>
-            <option value="2X" selected>2X</option>
-            <option value="3X">3X</option>
-            <option value="4X">4X</option>
-            <option value="5X">5X</option>
-          </select>
-        </div>
         <div class="quantity">
           <span>Quantity:</span>
           <div class="quantity-input">
@@ -62,13 +52,13 @@ fetch("../../services/shop.json")
     myForm.addEventListener("submit", (event) => {
       event.preventDefault();
       const quantity = document.querySelector("#quantity").value;
-      const size = document.querySelector("#size").value;
+      const size = `• One size fits most`;
       const price = product.price;
       const title = product.title;
       const imgSrc = product["src-front"];
       let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
       const existingCartItemIndex = cartItems.findIndex(
-        (item) => item.title === title && item.size === size
+        (item) => item.title === title
       );
       if (existingCartItemIndex > -1) {
         // if item already exists in cart, update the quantity

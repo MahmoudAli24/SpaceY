@@ -12,8 +12,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../css/navbar/navbar.css" />
-    <link rel="stylesheet" href="../../css/cart.css" />
-    <title>Cart</title>
+    <link rel="stylesheet" href="../../css/product-details.css" />
+    <title>product-details</title>
   </head>
   <body>
     <nav class="main-nav">
@@ -30,7 +30,7 @@
           <li class="main-nav__item">
             <p href="#" class="main-nav__link store">Store</p>
             <ul class="main-nav__item__menu">
-              <li><a href="./shop-men.html">Shop Men</a></li>
+              <li><a href="#">Shop Men</a></li>
               <li>
                 <a href="./shop-female.html">Shop Woman</a>
               </li>
@@ -52,40 +52,51 @@
       </div>
     </nav>
     <main>
-      <section>
-        <header><h1>CART</h1></header>
-      </section>
-      <section class="cart">
+      <section class="product-details">
         <div class="container">
-          <div class="cart-content">
-            <form action="shipping-address.html">
-              <table class="cart-table">
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-                <tfoot>
-                  <tr>
-                    <td colspan="2"></td>
-                    <td class="cart-label">Total:</td>
-                    <td class="cart-total"></td>
-                  </tr>
-                </tfoot>
-              </table>
-              <div class="submit">
-                <button type="submit">Checkout</button>
+          <div class="product-details__content">
+            <div class="product-details__content__img">
+              <img src="../../image/shop-men/1-F.webp" alt="..." />
+            </div>
+            <div class="product-details__content__text">
+              <div class="header">
+                <h3>UNISEX SPACEY ZIPPER HOODIEeeeeeeeeeeeeeeee</h3>
+                <p>$50.00</p>
               </div>
-            </form>
+              <hr />
+              <div class="fabric">
+                <p>Fabric Content:</p>
+                <ul>
+                  <li><span>Small-2X: 70% Cotton / 30% Polyester</span></li>
+                  <li><span>3X-5X: 50% Cotton / 50% Polyester</span></li>
+                </ul>
+              </div>
+              <form>
+                <div class="quantity">
+                  <span>Quantity:</span>
+                  <div class="quantity-input">
+                    <span class="quantity-btn" data-action="minus">-</span>
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      max="10"
+                      value="1"
+                    />
+                    <span class="quantity-btn" data-action="plus">+</span>
+                  </div>
+                </div>
+                <div class="submit">
+                  <button type="submit">ADD TO CART</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <script src="../../js/navBar.js"></script>
-    <script src="../../js/cart.js"></script>
+    <script src="../../js/accessries-details.js"></script>
   </body>
 </html>
