@@ -24,7 +24,7 @@ a {
   padding-top: 100px;
 }
 .hero-content span {
-  color: #c4c4c4;
+  color: #757575;
 }
 /* End Hero */
 /* Start Price */
@@ -51,7 +51,7 @@ a {
 .price-item__text .save {
   margin-top: 8px;
   margin-bottom: 44px;
-  color: #2f80ed;
+  color: #0020ff;
   font-size: 18px;
   line-height: 30px;
 }
