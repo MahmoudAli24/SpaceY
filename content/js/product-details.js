@@ -97,6 +97,7 @@ window.addEventListener("load", function () {
   let minus = document.querySelector(".minus");
   let quantityInput = document.querySelector("#quantity");
 
+  console.log(plus, minus, quantityInput);
   plus.addEventListener("click", () => {
     if (quantityInput.value < 10) {
       ++quantityInput.value;
