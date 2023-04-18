@@ -32,14 +32,19 @@ a {
   padding: 50px 0;
 }
 .price-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  grid-column-gap: 20px;
-  grid-row-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .price-item {
   padding: 48px 32px 0 32px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(0, 0, 0, 0.12);
+  width: calc(100% / 3 - 10px);
+}
+@media (max-width: 991px) {
+  .price-item {
+    width: 100%;
+  }
 }
 .price-item__text h4 {
   font-weight: bold;
@@ -109,12 +114,6 @@ a {
 @media (min-width: 992px) {
   .price-item__text .title {
     height: 90px;
-  }
-}
-@media (max-width: 991px) {
-  .price-cards {
-    grid-template-columns: repeat(1, 1fr);
-    grid-row-gap: 32px;
   }
 }
 @media (max-width: 768px) {
