@@ -25,7 +25,8 @@ header h1 {
 .product .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 15px;
 }
 .product .cards .card {
   width: calc(100% / 4 - 15px);

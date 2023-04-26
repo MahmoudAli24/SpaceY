@@ -172,3 +172,7 @@ body {
     bottom: 100%;
   }
 }
+.btns {
+  display: flex;
+  gap: 10px;
+}
