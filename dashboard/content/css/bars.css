@@ -1,0 +1,117 @@
+/* Start NavBar */
+.navbar {
+  border-bottom: 2px solid var(--border-color);
+  z-index: 2;
+}
+.navbar__logo img {
+  display: block;
+  width: 110px;
+}
+.navbar__search {
+  width: 55%;
+}
+.navbar__search input {
+  width: 100%;
+}
+.navbar__search input:focus-visible {
+  outline-color: var(--border-active-color);
+}
+.navbar__search::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f002";
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--icon-color);
+  z-index: 10;
+}
+.navbar__info__profile__image img {
+  width: 40px;
+  height: 40px;
+}
+.navbar__info__notification {
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+.navbar__info__notification__icon::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #f04461;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: 11px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* End NavBar */
+/* Start Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  padding-top: 70px;
+  border-right: 2px solid var(--border-color);
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+}
+@media (max-width: 320px) {
+  .sidebar {
+    width: 54px;
+  }
+}
+
+.sidebar__head {
+  border-bottom: 2px solid var(--border-color);
+}
+.sidebar .sidebar__head .sidebar__head__img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  background-color: var(--border-color);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+.sidebar ul li a {
+  transition: 0.3s;
+  width: 95%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+  background-color: var(--dashbord-color);
+  color: var(--secondary-color);
+  width: 100%;
+}
+.sidebar ul li a.active svg,
+.sidebar ul li a:hover svg {
+  color: var(--secondary-color);
+}
+/* End Sidebar */

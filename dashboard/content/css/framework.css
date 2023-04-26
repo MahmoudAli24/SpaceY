@@ -1,0 +1,317 @@
+:root {
+  --radius: 8px;
+  --primary-color: #ffffff;
+  --secondary-color: #f7f7fc;
+  --text-color: #11142d;
+  --img-color: #e2e2ea;
+  --border-color: #e1e1e1;
+  --icon-color: #9a9ab0;
+  --dashbord-color: #5541d7;
+  --border-active-color: #9388d9d1;
+  --blue-color: #2d96ee;
+  --orange-color: #ee952d;
+  --green-color: #3caa91;
+  --gray-color: #92929d;
+  --delete-color: #cd2541;
+}
+.container {
+  margin: 0 32px;
+}
+.text-center {
+  text-align: center;
+}
+.overflow-h {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+/* Start Width */
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+/* End Width */
+/* Start Font-Size */
+.fs-12 {
+  font-size: 12px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-45 {
+  font-size: 45px;
+}
+/* End Font-Size */
+/* Start Font-Weight */
+.fw-400 {
+  font-weight: 400;
+}
+.fw-700 {
+  font-weight: 700;
+}
+/* End Font-Weight */
+/* Start Display */
+.d-none {
+  display: none;
+}
+@media (max-width: 768px) {
+  .d-none-mob {
+    display: none;
+  }
+}
+.d-block {
+  display: block;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-bt {
+  justify-content: space-between;
+}
+.justify-content-c {
+  justify-content: center;
+}
+.justify-content-s {
+  justify-content: start;
+}
+.algin-items-c {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-g-1 {
+  flex-grow: 1;
+}
+/* End Display */
+/* Start Gap */
+.gap-10 {
+  gap: 10px;
+}
+.gap-32 {
+  gap: 32px;
+}
+/* End Gap */
+/* Start Margen */
+.m-0 {
+  margin: 0;
+}
+.m-32 {
+  margin: 32px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-32 {
+  margin-left: 32px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mt-15 {
+  margin-top: 15px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-32 {
+  margin-top: 32px;
+}
+.mb-5 {
+  margin-bottom: 5px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mx-15 {
+  margin: 0 15px;
+}
+/* End Margen */
+/* Start Padding */
+.p-0 {
+  padding: 0;
+}
+.p-10 {
+  padding: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pl-5 {
+  padding-left: 5px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.pl-20 {
+  padding-left: 20px;
+}
+.pl-30 {
+  padding-left: 30px;
+}
+.pr-5 {
+  padding-right: 5px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pr-20 {
+  padding-right: 20px;
+}
+.py-10 {
+  padding: 10px 0;
+}
+.py-15 {
+  padding: 15px 0;
+}
+.px-10 {
+  padding: 0 10px;
+}
+
+/* End Padding */
+/* Start Border */
+.border-none {
+  border: none;
+}
+.border-rad-8 {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+/* End Border */
+/* Start Position */
+.p-relative {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+/* End Position */
+/* Start Mob */
+@media (max-width: 768px) {
+  .d-none-mob {
+    display: none;
+  }
+  .justify-content-c-mob {
+    justify-content: center;
+  }
+  .flex-column-mob {
+    flex-direction: column;
+  }
+  .flex-row-mob {
+    flex-direction: row;
+  }
+  .text-center-mob {
+    text-align: center;
+  }
+  .w-100-mob {
+    width: 100%;
+  }
+  .m-15-mob {
+    margin: 15px;
+  }
+  .m-10-mob {
+    margin: 10px;
+  }
+  .gap-15-mob {
+    gap: 15px;
+  }
+}
+/* End Mob */
+/* Strat Glopaly */
+.shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.primary-bg {
+  background-color: var(--primary-color);
+}
+.primary-c {
+  color: var(--primary-color);
+}
+.secondary-bg {
+  background-color: var(--secondary-color);
+}
+.dashbord-bg {
+  background-color: var(--dashbord-color);
+}
+.dashbord-c {
+  color: var(--dashbord-color);
+}
+.text-c {
+  color: var(--text-color);
+}
+.img-c {
+  color: var(--img-color);
+}
+.icon-c {
+  color: var(--icon-color);
+}
+.blue-c {
+  color: var(--blue-color);
+}
+.blue-bg {
+  background-color: var(--blue-color);
+}
+.orange-c {
+  color: var(--orange-color);
+}
+.orange-bg {
+  background-color: var(--orange-color);
+}
+.green-bg {
+  background-color: var(--green-color);
+}
+.green-c {
+  color: var(--green-color);
+}
+.gray-c {
+  color: var(--gray-color);
+}
+.border-c {
+  border: 2px solid var(--border-color);
+}
+.delete-c {
+  color: var(--delete-color);
+}
+.delete-bg {
+  background: var(--delete-color);
+}
+/* End Glopaly */

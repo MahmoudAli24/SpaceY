@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="dashboard" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+      integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/framework.css" />
+    <link rel="stylesheet" href="../css/bars.css" />
+    <link rel="stylesheet" href="../css/products.css" />
+
+    <title>Products</title>
+  </head>
+  <body>
+    <nav class="navbar primary-bg py-10 p-relative">
+      <div class="container d-flex justify-content-bt algin-items-c">
+        <div class="navbar__logo d-flex algin-items-c gap-10">
+          <img src="../assets/images/logo.png" alt="logo" />
+        </div>
+        <div class="navbar__search d-flex justify-content-c p-relative">
+          <input
+            type="search"
+            placeholder="Search"
+            class="p-10 pl-30 secondary-bg border-none border-rad-8"
+          />
+        </div>
+        <div class="navbar__info d-flex gap-10 algin-items-c">
+          <div
+            class="navbar__info__notification d-flex algin-items-c justify-content-c"
+          >
+            <div class="navbar__info__notification__icon p-relative">
+              <i class="fa-regular fa-bell fa-fw"></i>
+            </div>
+          </div>
+          <div class="navbar__info__profile d-flex algin-items-c gap-10">
+            <div class="navbar__info__profile__image">
+              <img
+                class="d-block"
+                src="../assets/images/navbar/avatar.png"
+                alt="Profile"
+              />
+            </div>
+            <div class="navbar__info__profile__info d-none-mob">
+              <div class="navbar__info__profile__info__name">
+                <p class="m-0 fs-16 fw-700">Yousef</p>
+              </div>
+              <div class="navbar__info__profile__info__jop-titel">
+                <p class="m-0 fs-12 fw-400">Manager</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="d-flex">
+      <div class="sidebar primary-bg">
+        <div class="ml-32 mr-15 m-10-mob">
+          <div
+            class="sidebar__head d-flex algin-items-c justify-content-c flex-column-mob gap-10 pt-30 pb-20"
+          >
+            <div class="sidebar__head__img">
+              <span></span>
+            </div>
+            <div class="sidebar__head__content enter-mob text-center">
+              <p class="fs-16 fw-700">Broto Store</p>
+              <p class="fs-12 fw-700 dashbord-c">Verified</p>
+            </div>
+          </div>
+          <ul class="py-20">
+            <li>
+              <a
+                href="../../index.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-crown fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Dashbord</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./add-product.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-bag-shopping fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Add Product</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c active"
+              >
+                <i class="fa-solid fa-cart-shopping fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Products</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="./trips.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Trips</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-rotate fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Edit Product</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content w-100 overflow-h m-32 m-15-mob">
+        <h1 class="m-0 mb-10">Products</h1>
+        <form>
+          <div
+            class="content-prodcuts overflow-scroll primary-bg p-20 border-rad-8 mt-30"
+          >
+            <input
+              type="search"
+              placeholder="Search"
+              class="search p-10 pl-30 secondary-bg border-none border-rad-8 w-100 p-relative"
+            />
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Item</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Product A</td>
+                  <td>Category A</td>
+                  <td>$10.99</td>
+                  <td>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum nulla voluptatum culpa eum tempore velit autem
+                    </div>
+                    <div class="edit d-flex">
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Product B</td>
+                  <td>Category B</td>
+                  <td>$15.99</td>
+                  <td>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum nulla voluptatum culpa eum tempore velit autem
+                    </div>
+                    <div class="edit d-flex">
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Product B</td>
+                  <td>Category B</td>
+                  <td>$15.99</td>
+                  <td>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum nulla voluptatum culpa eum tempore velit autem
+                    </div>
+                    <div class="edit d-flex">
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Product B</td>
+                  <td>Category B</td>
+                  <td>$15.99</td>
+                  <td>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum nulla voluptatum culpa eum tempore velit autem
+                    </div>
+                    <div class="edit d-flex">
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Product B</td>
+                  <td>Category B</td>
+                  <td>$15.99</td>
+                  <td>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum nulla voluptatum culpa eum tempore velit autem
+                    </div>
+                    <div class="edit d-flex">
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Product B</td>
+                  <td>Category B</td>
+                  <td>$15.99</td>
+                  <td>
+                    <div class="text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ipsum nulla voluptatum culpa eum tempore velit autem
+                    </div>
+                    <div class="edit d-flex">
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
+                      >
+                        Edit
+                      </a>
+                      <a
+                        href="#"
+                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
+                      >
+                        Delete
+                      </a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

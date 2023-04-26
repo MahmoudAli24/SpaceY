@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="dashbord" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"
+      integrity="sha512-6mc0R607di/biCutMUtU9K7NtNewiGQzrvWX4bWTeqmljZdJrwYvKJtnhgR+Ryvj+NRJ8+NnnCM/biGqMe/iRA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font-awesome 6.2.1 -->
+    <link rel="stylesheet" href="content/css/bars.css" />
+    <link rel="stylesheet" href="content/css/style.css" />
+    <link rel="stylesheet" href="content/css/framework.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <nav class="navbar primary-bg py-10 p-relative">
+      <div class="container d-flex justify-content-bt algin-items-c">
+        <div class="navbar__logo d-flex algin-items-c gap-10">
+          <img src="content/assets/images/logo.png" alt="" />
+        </div>
+        <div class="navbar__search d-flex justify-content-c p-relative">
+          <input
+            type="search"
+            placeholder="Search"
+            class="p-10 pl-30 secondary-bg border-none border-rad-8"
+          />
+        </div>
+        <div class="navbar__info d-flex gap-10 algin-items-c">
+          <div
+            class="navbar__info__notification d-flex algin-items-c justify-content-c"
+          >
+            <div class="navbar__info__notification__icon p-relative">
+              <i class="fa-regular fa-bell fa-fw"></i>
+            </div>
+          </div>
+          <div class="navbar__info__profile d-flex algin-items-c gap-10">
+            <div class="navbar__info__profile__image">
+              <img
+                class="d-block"
+                src="content/assets/images/navbar/avatar.png"
+                alt="Profile"
+              />
+            </div>
+            <div class="navbar__info__profile__info d-none-mob">
+              <div class="navbar__info__profile__info__name">
+                <p class="m-0 fs-16 fw-700">Yousef</p>
+              </div>
+              <div class="navbar__info__profile__info__jop-titel">
+                <p class="m-0 fs-12 fw-400">Manger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="d-flex">
+      <div class="sidebar primary-bg">
+        <div class="ml-32 mr-15 m-10-mob">
+          <div
+            class="sidebar__head d-flex algin-items-c justify-content-c flex-column-mob gap-10 pt-30 pb-20"
+          >
+            <div class="sidebar__head__img">
+              <span></span>
+            </div>
+            <div class="sidebar__head__content enter-mob">
+              <p class="fs-16 fw-700">Broto Store</p>
+              <p class="fs-12 fw-700 dashbord-c">Verified</p>
+            </div>
+          </div>
+          <ul class="py-20">
+            <li>
+              <a
+                href="#"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c active"
+              >
+                <i class="fa-solid fa-crown fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Dashbord</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="content/src/add-product.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-bag-shopping fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Add Product</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="content/src/products.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-cart-shopping fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Products</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="content/src/trips.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Trips</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-rotate fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob">Edit Product</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content w-100 overflow-h">
+        <div class="content__details gap-32 gap-15-mob">
+          <div
+            class="content__details__card d-flex justify-content-bt algin-items-c p-20 border-rad-8 blue-bg"
+          >
+            <div
+              class="content__details__card__info d-flex flex-column gap-10 primary-c"
+            >
+              <i class="fa-solid fa-2x fa-cart-shopping fa-fw"></i>
+              <span class="fs-16 fw-400">New Order</span>
+            </div>
+            <div class="content__details__card__num primary-c fs-45 fw-700">
+              5
+            </div>
+          </div>
+          <div
+            class="content__details__card d-flex justify-content-bt algin-items-c p-20 border-rad-8 orange-bg"
+          >
+            <div
+              class="content__details__card__info d-flex flex-column gap-10 primary-c"
+            >
+              <i class="fa-solid fa-2x fa-truck fa-fw"></i>
+              <span class="fs-16 fw-400">Ready to Deliver</span>
+            </div>
+            <div class="content__details__card__num primary-c fs-45 fw-700">
+              2
+            </div>
+          </div>
+          <div
+            class="content__details__card d-flex justify-content-bt algin-items-c p-20 border-rad-8 green-bg"
+          >
+            <div
+              class="content__details__card__info d-flex flex-column gap-10 primary-c"
+            >
+              <i class="fa-solid fa-2x fa-comments fa-fw"></i>
+              <span class="fs-16 fw-400">New Message</span>
+            </div>
+            <div class="content__details__card__num primary-c fs-45 fw-700">
+              3
+            </div>
+          </div>
+          <div
+            class="content__details__card d-flex justify-content-bt algin-items-c p-20 border-rad-8 dashbord-bg"
+          >
+            <div
+              class="content__details__card__info d-flex flex-column gap-10 primary-c"
+            >
+              <i class="fa-solid fa-2x fa-message fa-fw"></i>
+              <span class="fs-16 fw-400">Reviews</span>
+            </div>
+            <div class="content__details__card__num primary-c fs-45 fw-700">
+              4
+            </div>
+          </div>
+        </div>
+        <div
+          class="content__cavans d-flex algin-items-c flex-column-mob p-20 border-rad-8 mt-32 primary-bg shadow"
+        >
+          <div
+            class="content__cavans__info d-flex flex-column flex-row-mob gap-10 mr-10"
+          >
+            <div class="content__cavans__info__box">
+              <p class="fs-14">Product Viewed</p>
+              <div class="d-flex algin-items-c">
+                <h3 class="fs-32 fw-700 m-0">500</h3>
+                <span class="fs-14 fw-400 ml-10 gray-c">10%</span>
+              </div>
+            </div>
+            <div class="content__cavans__info__box">
+              <p class="fs-14">Success Transactions</p>
+              <div class="d-flex algin-items-c">
+                <h3 class="fs-32 fw-700 m-0">5</h3>
+                <span class="fs-14 fw-400 ml-10 gray-c">10%</span>
+              </div>
+            </div>
+            <div class="content__cavans__info__box">
+              <p class="fs-14">Conversion Rate</p>
+              <div class="d-flex algin-items-c">
+                <h3 class="fs-32 fw-700 m-0">25</h3>
+                <span class="fs-14 fw-400 ml-10 gray-c">12%</span>
+              </div>
+            </div>
+            <div class="content__cavans__info__box">
+              <p class="fs-14">Sold Product</p>
+              <div class="d-flex algin-items-c">
+                <h3 class="fs-32 fw-700 m-0">10</h3>
+                <span class="fs-14 fw-400 ml-10 gray-c">20%</span>
+              </div>
+            </div>
+          </div>
+          <div class="content__cavans__cavan">
+            <canvas id="chartJSContainer"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="content/js/app.js"></script>
+  </body>
+</html>
