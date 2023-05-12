@@ -72,6 +72,7 @@
   -ms-transition: width 0.5s ease-in-out;
   -o-transition: width 0.5s ease-in-out;
 }
+
 @media (max-width: 768px) {
   .sidebar {
     width: 60px;
@@ -82,7 +83,22 @@
     width: 54px;
   }
 }
-
+.small {
+  width: 60px !important;
+}
+.sidebar .angle {
+  right: -17px;
+  font-size: 25px;
+  padding: 5px 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
 .sidebar__head {
   border-bottom: 2px solid var(--border-color);
 }

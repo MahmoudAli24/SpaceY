@@ -66,10 +66,13 @@
       </div>
     </nav>
     <main class="d-flex">
-      <div class="sidebar primary-bg">
-        <div class="ml-32 mr-15 m-10-mob">
+      <div class="sidebar primary-bg p-relative">
+        <span class="angle p-absolute"
+          ><i class="fa-solid fa-angle-left"></i
+        ></span>
+        <div class="sidebar__content ml-32 mr-15 m-10-mob">
           <div
-            class="sidebar__head d-flex algin-items-c justify-content-c flex-column-mob gap-10 pt-30 pb-20"
+            class="sidebar__head p-relative d-flex algin-items-c justify-content-c flex-column-mob gap-10 pt-30 pb-20"
           >
             <div class="sidebar__head__img">
               <span></span>
@@ -86,7 +89,9 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-crown fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Dashbord</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Dashbord</span
+                >
               </a>
             </li>
             <li>
@@ -95,16 +100,20 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-bag-shopping fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Add Product</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Add Product</span
+                >
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="./products.html"
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c active"
               >
                 <i class="fa-solid fa-cart-shopping fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Products</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Products</span
+                >
               </a>
             </li>
             <li>
@@ -113,16 +122,65 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Trips</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Trips</span
+                >
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="./add-trips.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Add Trips</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="./order-trips.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Order Trips</span
+                >
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="./edit-product.html"
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-rotate fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Edit Product</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Edit Product</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="./order.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-truck-fast fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Orders</span
+                >
+              </a>
+            </li>
+            <li>
+              <a
+                href="./order-detalis.html"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+              >
+                <i class="fa-solid fa-truck-fast fa-fw icon-c fa-1x"></i>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Orders Details</span
+                >
               </a>
             </li>
           </ul>
@@ -146,145 +204,34 @@
                   <th>Item</th>
                   <th>Category</th>
                   <th>Price</th>
+                  <th>Discount</th>
+                  <th>Size</th>
+                  <th>Qty</th>
                   <th>Description</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Product A</td>
+                  <td class="d-flex flex-column gap-10 mt-20">
+                    <span
+                      ><svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="40" height="40" rx="8" fill="#E2E2EA" />
+                      </svg>
+                    </span>
+                    <span>Product A</span>
+                  </td>
                   <td>Category A</td>
                   <td>$10.99</td>
-                  <td>
-                    <div class="text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsum nulla voluptatum culpa eum tempore velit autem
-                    </div>
-                    <div class="edit d-flex">
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-                      >
-                        Edit
-                      </a>
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
-                      >
-                        Delete
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Product B</td>
-                  <td>Category B</td>
-                  <td>$15.99</td>
-                  <td>
-                    <div class="text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsum nulla voluptatum culpa eum tempore velit autem
-                    </div>
-                    <div class="edit d-flex">
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-                      >
-                        Edit
-                      </a>
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
-                      >
-                        Delete
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Product B</td>
-                  <td>Category B</td>
-                  <td>$15.99</td>
-                  <td>
-                    <div class="text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsum nulla voluptatum culpa eum tempore velit autem
-                    </div>
-                    <div class="edit d-flex">
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-                      >
-                        Edit
-                      </a>
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
-                      >
-                        Delete
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Product B</td>
-                  <td>Category B</td>
-                  <td>$15.99</td>
-                  <td>
-                    <div class="text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsum nulla voluptatum culpa eum tempore velit autem
-                    </div>
-                    <div class="edit d-flex">
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-                      >
-                        Edit
-                      </a>
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
-                      >
-                        Delete
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Product B</td>
-                  <td>Category B</td>
-                  <td>$15.99</td>
-                  <td>
-                    <div class="text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsum nulla voluptatum culpa eum tempore velit autem
-                    </div>
-                    <div class="edit d-flex">
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-                      >
-                        Edit
-                      </a>
-                      <a
-                        href="#"
-                        class="d-block border-rad-8 p-10 secondary-bg mt-15 border-c delete-bg primary-c fw-400 fs-16"
-                      >
-                        Delete
-                      </a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Product B</td>
-                  <td>Category B</td>
-                  <td>$15.99</td>
+                  <td>10%</td>
+                  <td>XL</td>
+                  <td>10</td>
                   <td>
                     <div class="text">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -318,5 +265,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="../js/angle.js"></script>
   </body>
 </html>

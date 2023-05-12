@@ -68,6 +68,6 @@ td {
 th {
   background-color: var(--secondary-color);
 }
-td:nth-child(8) {
-  width: 30%;
+td {
+  width: calc(100% / 11);
 }

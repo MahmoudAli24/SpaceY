@@ -111,6 +111,9 @@
 .m-0 {
   margin: 0;
 }
+.m-10 {
+  margin: 10px !important;
+}
 .m-32 {
   margin: 32px;
 }
@@ -132,6 +135,9 @@
 .mt-15 {
   margin-top: 15px;
 }
+.mt-20 {
+  margin-top: 20px;
+}
 .mt-30 {
   margin-top: 30px;
 }
@@ -146,6 +152,12 @@
 }
 .mx-15 {
   margin: 0 15px;
+}
+.ml-75 {
+  margin-left: 75px !important;
+}
+.mr-15 {
+  margin-right: 15px !important;
 }
 /* End Margen */
 /* Start Padding */
@@ -257,6 +269,13 @@
 }
 /* End Mob */
 /* Strat Glopaly */
+.rotate-180 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
 .shadow {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

@@ -20,9 +20,8 @@
     />
     <link rel="stylesheet" href="../css/framework.css" />
     <link rel="stylesheet" href="../css/bars.css" />
-    <link rel="stylesheet" href="../css/products.css" />
-
-    <title>Edit Product</title>
+    <link rel="stylesheet" href="../css/order-detalis.css" />
+    <title>order-detalis</title>
   </head>
   <body>
     <nav class="navbar primary-bg py-10 p-relative">
@@ -66,10 +65,13 @@
       </div>
     </nav>
     <main class="d-flex">
-      <div class="sidebar primary-bg">
-        <div class="ml-32 mr-15 m-10-mob">
+      <div class="sidebar primary-bg p-relative">
+        <span class="angle p-absolute"
+          ><i class="fa-solid fa-angle-left"></i
+        ></span>
+        <div class="sidebar__content ml-32 mr-15 m-10-mob">
           <div
-            class="sidebar__head d-flex algin-items-c justify-content-c flex-column-mob gap-10 pt-30 pb-20"
+            class="sidebar__head p-relative d-flex algin-items-c justify-content-c flex-column-mob gap-10 pt-30 pb-20"
           >
             <div class="sidebar__head__img">
               <span></span>
@@ -86,16 +88,20 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-crown fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Dashbord</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Dashbord</span
+                >
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="./add-product.html"
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-bag-shopping fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Add Product</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Add Product</span
+                >
               </a>
             </li>
             <li>
@@ -104,7 +110,9 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-cart-shopping fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Products</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Products</span
+                >
               </a>
             </li>
             <li>
@@ -113,7 +121,9 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Trips</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Trips</span
+                >
               </a>
             </li>
             <li>
@@ -122,7 +132,9 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-rocket fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Add Trips</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Add Trips</span
+                >
               </a>
             </li>
             <li>
@@ -140,10 +152,12 @@
             <li>
               <a
                 href="./edit-product.html"
-                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c active"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-rotate fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Edit Product</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Edit Product</span
+                >
               </a>
             </li>
             <li>
@@ -152,16 +166,18 @@
                 class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
               >
                 <i class="fa-solid fa-truck-fast fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob">Orders</span>
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
+                  >Orders</span
+                >
               </a>
             </li>
             <li>
               <a
                 href="./order-detalis.html"
-                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c"
+                class="p-10 border-rad-8 mb-10 d-flex justify-content-s justify-content-c-mob algin-items-c active"
               >
                 <i class="fa-solid fa-truck-fast fa-fw icon-c fa-1x"></i>
-                <span class="ml-10 fs-16 fw-700 d-none-mob"
+                <span class="ml-10 fs-16 fw-700 d-none-mob link-page"
                   >Orders Details</span
                 >
               </a>
@@ -170,125 +186,48 @@
         </div>
       </div>
       <div class="content w-100 overflow-h m-32 m-15-mob">
-        <h1 class="m-0 mb-10">Add Product</h1>
+        <h1 class="m-0 mb-10">Orders Details</h1>
         <form>
           <div
-            class="content__product-information primary-bg p-20 border-rad-8"
+            class="content-prodcuts overflow-scroll primary-bg p-20 border-rad-8 mt-30"
           >
-            <h4 class="m-0 mb-10">Product Information</h4>
-            <label for="name" class="d-block fs-12 fw-700 mb-5"
-              >Product Name</label
-            >
             <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Input Here"
-              class="border-rad-8 p-10 secondary-bg mb-10 w-50 w-100-mob border-c"
+              type="search"
+              placeholder="Search"
+              class="search p-10 pl-30 secondary-bg border-none border-rad-8 w-100 p-relative"
             />
-            <label for="category" class="d-block fs-12 fw-700 mb-5"
-              >Product Category</label
-            >
-            <input
-              type="text"
-              name="category"
-              id="category"
-              placeholder="Input Here"
-              class="border-rad-8 p-10 secondary-bg w-50 w-100-mob border-c"
-            />
-          </div>
-          <div
-            class="content__product-detail primary-bg p-20 border-rad-8 mt-30"
-          >
-            <h4 class="m-0 mb-10">Product Detail</h4>
-            <div class="d-flex gap-10">
-              <div class="price w-50">
-                <label for="currency" class="d-block fs-12 fw-700 mb-5"
-                  >Select a currency</label
-                >
-                <select
-                  id="currency"
-                  name="currency"
-                  class="border-rad-8 p-10 secondary-bg mb-10 w-100 border-c"
-                >
-                  <option value="USD" selected>US Dollar</option>
-                  <option value="EUR">Euro</option>
-                </select>
-              </div>
-              <div class="size w-50">
-                <label for="size" class="d-block fs-12 fw-700 mb-5"
-                  >Select a Size</label
-                >
-                <select
-                  id="currency"
-                  name="currency"
-                  class="border-rad-8 p-10 secondary-bg mb-10 w-100 border-c"
-                >
-                  <option value="L">L</option>
-                  <option value="X">X</option>
-                  <option value="XL">XL</option>
-                  <option value="2X">2X</option>
-                  <option value="3X">3X</option>
-                  <option value="4X">4X</option>
-                  <option value="5X">5X</option>
-                </select>
-              </div>
-            </div>
-            <div class="description">
-              <label for="description" class="d-block fs-12 fw-700 mb-5"
-                >Description</label
-              >
-              <textarea
-                name="description"
-                id="description"
-                cols="30"
-                rows="10"
-                class="border-rad-8 p-10 secondary-bg mb-10 w-100 border-c"
-              ></textarea>
-            </div>
-          </div>
-          <div
-            class="content__product-image primary-bg p-20 border-rad-8 mt-30"
-          >
-            <h4 class="m-0 mb-10">Product Images</h4>
-            <div class="d-flex gap-10">
-              <div class="image w-50">
-                <label for="image" class="d-block fs-12 fw-700 mb-5"
-                  >Select a Image Front</label
-                >
-                <input
-                  type="file"
-                  name="image"
-                  id="image"
-                  class="border-rad-8 p-10 secondary-bg mb-10 w-100 border-c"
-                />
-              </div>
-              <div class="image w-50">
-                <label for="image" class="d-block fs-12 fw-700 mb-5"
-                  >Select a Image Back</label
-                >
-                <input
-                  type="file"
-                  name="image"
-                  id="image"
-                  class="border-rad-8 p-10 secondary-bg mb-10 w-100 border-c"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="save">
-            <button
-              type="submit"
-              class="border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-            >
-              Save
-            </button>
-            <button
-              type="submit"
-              class="border-rad-8 p-10 secondary-bg mt-15 border-c dashbord-bg primary-c fw-400 fs-16"
-            >
-              Save And Add Another
-            </button>
+            <table>
+              <thead>
+                <tr>
+                  <th>User name</th>
+                  <th>User phone</th>
+                  <th>User email</th>
+                  <th>User address</th>
+                  <th>User city</th>
+                  <th>Product name</th>
+                  <th>Product photo</th>
+                  <th>Product size</th>
+                  <th>Product price</th>
+                  <th>Product discount</th>
+                  <th>Product total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>User name</td>
+                  <td>User phone</td>
+                  <td>User email</td>
+                  <td>User address</td>
+                  <td>User city</td>
+                  <td>Product name</td>
+                  <td><img src="" alt="...." /></td>
+                  <td>Product size</td>
+                  <td>Product price</td>
+                  <td>Product discount</td>
+                  <td>Product total</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </form>
       </div>
@@ -299,5 +238,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="../js/angle.js"></script>
   </body>
 </html>
